@@ -1,52 +1,19 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
+import Backend from 'i18next-http-backend';
 
 i18n
     .use(LanguageDetector)
-    .use(initReactI18next)
+    .use(initReactI18next).use(Backend)
     .init({
         debug: true,
         fallbackLng: "en", // Default language
         returnObjects: true,
-        resources: {
-            en: {
-                translation: {
-                    greeting: "Hello, Welcome!",
-                    description: {
-                        line1: "you're watching and learning react {{channel}}",
-                        line2: "good luck!"
-                    }
-                },
-            },
-            fr: {
-                translation: {
-                    greeting: "Bonjour, Bienvenue",
-                    description: {
-                        line1: "vous regardez et apprenez React {{channel}}",
-                        line2: "bonne chance !"
-                    }
-                },
-            },
-            hi: {
-                translation: {
-                    greeting: "नमस्ते, स्वागत है",
-                    description: {
-                        line1: "आप रिएक्ट को देख रहे हैं और सीख रहे हैं {{channel}}",
-                        line2: "शुभकामनाएँ!"
-                    }
-                },
-            },
-            ar: {
-                translation: {
-                    greeting: "مرحبًا، أهلاً بك!",
-                    description: {
-                        line1: "أنت تشاهد وتتعلم الرد",
-                        line2: "حظًا سعيدًا!"
-                    }
-                },
-            },
-        },
+        backend: {
+            // for all available options read the backend's repository readme file
+            loadPath: '/locales/{{lng}}/{{ns}}.json'
+        }
     });
 
 export default i18n;
