@@ -1,0 +1,210 @@
+.Header {
+  height: 80px;
+  line-height: 10vh;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  border-bottom: 1px solid #666;
+  width: 100%;
+  z-index: 999;
+}
+.Header .container {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 900px) and (max-width: 1024px) {
+  .Header .container {
+    max-width: 100%;
+    margin: 0 20px;
+  }
+}
+.Header .container .wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.Header .container .wrapper .flexSB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 550px) {
+  .Header .container .wrapper .flexSB {
+    display: none;
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .Header .container .wrapper .flexSB {
+    display: none;
+  }
+}
+.Header .container .wrapper .logo {
+  display: flex;
+  align-items: center;
+}
+.Header .container .wrapper .logo h1 {
+  color: #e50813;
+}
+.Header .container .wrapper .logo img {
+  width: 150px;
+  height: 35px;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+@media (max-width: 550px) {
+  .Header .container .wrapper .logo img {
+    width: 120px;
+    height: 30px;
+  }
+}
+.Header .container .wrapper a {
+  margin-left: 20px;
+}
+.Header .container .wrapper i {
+  position: relative;
+  quotes: 40px;
+  height: 40px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid;
+  margin: 0 10px;
+  display: flex;
+  text-decoration: none;
+  font-style: normal;
+  align-items: center;
+}
+.Header .container .wrapper button {
+  border-radius: 25px;
+  box-shadow: none;
+  font-size: 15px;
+  border: none;
+  font-weight: bold;
+}
+.Header .container .wrapper .navMenu_list {
+  display: flex;
+}
+.Header .container .wrapper .navMenu_list .logo {
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+}
+.Header .container .wrapper .navMenu_list .logo h1 {
+  color: #e50813;
+}
+@media (max-width: 550px) {
+  .Header .container .wrapper .navMenu_list {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    width: 50%;
+    height: 100vh;
+    z-index: 999;
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .Header .container .wrapper .navMenu_list {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    width: 50%;
+    height: 100vh;
+    z-index: 999;
+  }
+}
+.Header .container .wrapper .navMenu_list li {
+  margin-top: 10px;
+  padding: 0 20px;
+  text-align: center;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #e50813;
+}
+.Header .container .wrapper .toggles {
+  display: none;
+}
+.Header .container .wrapper .toggles span {
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+  border-radius: 100%;
+  color: #e50813;
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+}
+@media (max-width: 550px) {
+  .Header .container .wrapper .toggles {
+    display: block;
+    color: #fff;
+    background: transparent;
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .Header .container .wrapper .toggles {
+    display: block;
+    color: #fff;
+    background: transparent;
+  }
+}
+.Header .container .wrapper .account {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.Header .container .wrapper .account .accountItems {
+  display: flex;
+  align-items: center;
+}
+.Header .container .wrapper .account .switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Header .container .wrapper .account .switch .switchLabel {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  position: relative;
+  margin: 0 10px;
+}
+.Header .container .wrapper .account .switch input[type=checkbox] {
+  display: none;
+}
+.Header .container .wrapper .account .switch .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.Header .container .wrapper .account .switch input:checked + .slider {
+  background-color: #2196f3;
+}
+.Header .container .wrapper .account .switch .slider::before {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  left: 2px;
+  bottom: 3px;
+  background-color: #fff;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.Header .container .wrapper .account .switch input:checked + .slider::before {
+  transform: translateX(20px);
+}/*# sourceMappingURL=index.module.css.map */

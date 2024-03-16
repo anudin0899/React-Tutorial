@@ -1,0 +1,54 @@
+//colors
+$gradient_color: linear-gradient(142deg, rgb(3, 116, 208, 1) 10%, rgb(0, 239, 189, 1) 100%);
+$base_color: #ebebeb;
+$base_color2: #373737;
+$base_color3: #f8f8f8;
+$base_color4: lightgrey;
+$base_color5: #666;
+$base_color6: #f3f3f3;
+
+$PrimaryColor: hsl(176, 100%, 19%);
+$HoverColor: hsl(176, 90%, 23%);
+$WhiteColor: hsl(0, 0%, 100%);
+$BlackColor: hsl(0, 0%, 18%);
+$textColor: hsl(240, 1%, 48%);
+$WhiteColorDeam: hsl(0, 0%, 93%);
+$GreyBg: hsl(0, 0%, 96%);
+$GreyText: rgb(190, 190, 190);
+$inputColor: hsl(330, 12%, 97%);
+$boxShadow: 0 2px 8px 2px rgba(178, 178, 178, 0.189);
+
+
+//breakpoints
+
+@mixin breakpoint($point) {
+    @if $point ==md {
+        @media(max-width:550px) {
+            @content;
+        }
+    }
+}
+
+@mixin mediumScreen {
+    @media (min-width: 550px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin extraMediumScreen {
+    @media (min-width: 768px) and (max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin LargeScreen {
+    @media (min-width: 900px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin extraLargeScreen {
+    @media (min-width:900px) and (max-width: 1800px) {
+        @content;
+    }
+}

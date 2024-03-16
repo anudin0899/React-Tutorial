@@ -1,0 +1,49 @@
+.box {
+  width: 600px;
+  height: 300px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box input {
+  outline: none;
+  border: none;
+  height: 40px;
+  padding: 0 1rem;
+  border-right: 1px solid gray;
+}
+.box button {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+}
+.box form {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 0.5rem;
+}
+.box div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.box div,
+.box p {
+  background: transparent;
+  color: #fff;
+}
+.box .formInput {
+  display: flex;
+  flex-direction: row;
+}
+.box .formInput .otpInput {
+  width: 3rem;
+  border: none;
+}
+.box .formInput .otpInput:focus {
+  outline: 3px solid lightblue;
+}/*# sourceMappingURL=OtpForm.css.map */

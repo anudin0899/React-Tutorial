@@ -1,0 +1,26 @@
+.containers {
+  flex-direction: column;
+  min-height: 100vh;
+}
+.containers .wrap {
+  margin: 40px;
+}
+.containers .wrap .flex {
+  align-items: center;
+  justify-content: center;
+}
+.containers .wrap .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0;
+  padding: 10px 0;
+}
+.containers .wrap .pagination span {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.containers .wrap .pagination .pagination__selected {
+  color: #fff;
+  background: hsl(0, 94%, 36%);
+}/*# sourceMappingURL=pagination.css.map */

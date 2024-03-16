@@ -1,0 +1,42 @@
+.box {
+  position: absolute;
+  top: 100%;
+  right: -10px;
+  bottom: 0;
+  background-color: #5c5b5b;
+  width: 120px;
+  min-height: 130px;
+  margin-top: 20px;
+  border-radius: 5px;
+  z-index: 999;
+}
+.box::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 18px;
+  border-top: none;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #5c5b5b;
+}
+.box ul {
+  padding: 10px;
+  background: none;
+}
+.box ul li {
+  background: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 2px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #111;
+  color: #fff;
+}
+.box ul li:last-child {
+  border-bottom: none;
+}
+.box ul .items_selected {
+  color: rgb(53, 209, 6);
+}/*# sourceMappingURL=index.module.css.map */
