@@ -10,6 +10,7 @@ import ProductDetail from '../Pages/ProductDetailPage/ProductDetail';
 import OtpPage from '../Pages/OtpPage/OtpPage';
 import RegistrationForm from '../Pages/RegisterForm/RegisterForm';
 import I18Next from '../Pages/I18Next_Tutorial/I18Next';
+import Stepper from '../Pages/Stepper_Component/Stepper';
 
 
 const Dashboard = () => {
@@ -54,6 +55,7 @@ const Routing = () => {
                     <Route path='/otp' element={<OtpPage />} />
                     <Route path='/form' element={<RegistrationForm />} />
                     <Route path='/i18' element={<I18Next />} />
+                    <Route path='/stepper' element={<Stepper />} />
                 </Routes>
             </Router>
         </>

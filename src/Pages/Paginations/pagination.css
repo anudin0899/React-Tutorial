@@ -4,6 +4,7 @@
 }
 .containers .wrap {
   margin: 40px;
+  margin-top: 120px;
 }
 .containers .wrap .flex {
   align-items: center;
@@ -13,11 +14,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 8px 0;
-  padding: 10px 0;
+  margin: 25px 0;
+  padding: 10px;
 }
 .containers .wrap .pagination span {
-  padding: 10px 15px;
+  padding: 5px 15px;
   cursor: pointer;
 }
 .containers .wrap .pagination .pagination__selected {

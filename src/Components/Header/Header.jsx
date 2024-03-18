@@ -28,7 +28,7 @@ const Header = () => {
                             <h1 className='logo'>Demo</h1>
                         </div>)}
                         <li><Link to='/'>Home</Link></li>
-                        <li><Link to='/dashboard'>Dashboard</Link></li>
+                        <li><Link to='/stepper'>Stepper</Link></li>
                         <li><Link to='/products'>Pagination</Link></li>
                         <li><Link to='/otp'>Otp</Link></li>
                         <li><Link to='/contact'>Contact</Link></li>

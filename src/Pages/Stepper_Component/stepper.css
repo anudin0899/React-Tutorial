@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+}
+.container .stepper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+  width: 80%;
+}
+.container .stepper span {
+  color: #fff;
+}
+.container .stepper .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container .stepper .step.active .step-number {
+  background-color: #007bff;
+  color: #fff;
+}
+.container .stepper .step.complete .step-number {
+  background-color: #28a745;
+  color: #fff;
+}
+.container .stepper .step .step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  z-index: 2;
+}
+.container .stepper .step .step-name {
+  font-size: 14px;
+}
+.container .stepper .progress-bar {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  height: 4px;
+  background-color: #ccc;
+}
+.container .stepper .progress-bar .progress {
+  height: 100%;
+  background-color: #28a745;
+  transition: 0.2s ease;
+}/*# sourceMappingURL=stepper.css.map */
