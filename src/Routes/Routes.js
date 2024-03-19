@@ -11,6 +11,8 @@ import OtpPage from '../Pages/OtpPage/OtpPage';
 import RegistrationForm from '../Pages/RegisterForm/RegisterForm';
 import I18Next from '../Pages/I18Next_Tutorial/I18Next';
 import Stepper from '../Pages/Stepper_Component/Stepper';
+import Valid_without_Yup from '../Pages/Form_Validation/Valid_without_Yup';
+import Valid_with_Yup from '../Pages/Form_Validation/Valid_with_Yup';
 
 
 const Dashboard = () => {
@@ -56,6 +58,7 @@ const Routing = () => {
                     <Route path='/form' element={<RegistrationForm />} />
                     <Route path='/i18' element={<I18Next />} />
                     <Route path='/stepper' element={<Stepper />} />
+                    <Route path='/form-validate' element={<Valid_with_Yup />} />
                 </Routes>
             </Router>
         </>

@@ -172,6 +172,20 @@ input {
     font-size: 100%;
 }
 
+
+button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--HoverColor);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
 @media screen and (min-width:556px) {
 
     .mainContent,
@@ -187,10 +201,10 @@ input {
 }
 
 @media screen and (min-width:1240px) {
-    .container {
-        /* width: 75% !important; */
-        margin: auto !important;
-    }
+    /* .container {
+        width: 75% !important; 
+         margin: auto !important;
+    } */
 
     .section {
         padding: 5rem 0 3rem;
